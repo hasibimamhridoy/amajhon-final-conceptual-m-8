@@ -19,6 +19,7 @@ const DashboardLayout = () => {
         </ul>
       </div>
 
+
       <div className="w-[80%]">
         <Outlet></Outlet>
       </div>

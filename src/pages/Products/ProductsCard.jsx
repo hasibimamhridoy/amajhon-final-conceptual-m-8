@@ -6,17 +6,17 @@ const ProductsCard = ({ product }) => {
 
   const navigate = useNavigate();
 
-  const handleSingleItemNavigate = () => {
-    console.log("hello");
+  // const handleSingleItemNavigate = () => {
+  //   console.log("hello");
 
-    const user = false;
+  //   const user = false;
 
-    if (user) {
-      navigate(`/products/${id}`);
-    } else {
-      navigate(`/`);
-    }
-  };
+  //   if (user) {
+  //     navigate(`/products/${id}`);
+  //   } else {
+  //     navigate(`/`);
+  //   }
+  // };
 
   return (
     <div>
@@ -88,18 +88,18 @@ const ProductsCard = ({ product }) => {
               {price}
             </span>
 
-            {/* <Link to={`/products/${id}`}>
+            <Link to={`/products/${id}`} state={title}>
             <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
             View Details
             </button>
-            </Link> */}
+            </Link>
 
-            <button
+            {/* <button
               onClick={handleSingleItemNavigate}
               className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               View Details
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

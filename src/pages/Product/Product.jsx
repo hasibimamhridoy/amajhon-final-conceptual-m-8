@@ -2,18 +2,18 @@ import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 
 const Product = () => {
-  // const product = useLoaderData()
-  // console.log(product);
+  const product = useLoaderData()
+  console.log(product);
 
-  const data = useParams();
+  // const data = useParams();
 
-  const [product, setProduct] = useState({});
+  // const [product, setProduct] = useState({});
 
-  useEffect(() => {
-    fetch(`https://dummyjson.com/products/${data.id}`)
-      .then((res) => res.json())
-      .then((data) => setProduct(data));
-  }, [data.id]);
+  // useEffect(() => {
+  //   fetch(`https://dummyjson.com/products/${data.id}`)
+  //     .then((res) => res.json())
+  //     .then((data) => setProduct(data));
+  // }, [data.id]);
 
   console.log(product);
 
